@@ -1,0 +1,89 @@
+/* Custom Styles for Kai Zhao's Homepage */
+
+body {
+    padding-top: 70px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #fff !important;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #2c3e50 !important;
+    font-size: 1.3rem;
+}
+
+.nav-link {
+    color: #5a6c7d !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+.nav-item.active .nav-link {
+    color: #007bff !important;
+}
+
+main {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.lead {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.starter-template {
+    margin-bottom: 2.5rem;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+hr {
+    margin: 2rem 0;
+    border-top: 1px solid #e9ecef;
+}
+
+.img-fluid {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.figure-caption {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #6c757d;
+}
