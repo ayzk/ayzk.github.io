@@ -62,6 +62,34 @@ li {
     margin-bottom: 0.3rem;
 }
 
+.student-profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.student-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    flex: 0 0 140px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.student-profile p {
+    margin-bottom: 0;
+}
+
+.student-photo-opi {
+    object-position: 50% 65%;
+}
+
+.student-photo-chuan {
+    object-position: 75% 50%;
+}
+
 a {
     color: #007bff;
     text-decoration: none;
@@ -86,4 +114,15 @@ hr {
     margin-top: 1rem;
     font-size: 0.95rem;
     color: #6c757d;
+}
+
+@media (max-width: 575.98px) {
+    .student-profile {
+        display: block;
+    }
+
+    .student-photo {
+        display: block;
+        margin: 0 0 0.75rem 0;
+    }
 }
