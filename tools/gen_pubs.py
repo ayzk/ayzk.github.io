@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
-r"""Regenerate publications.html from cv.tex.
-
-Usage:  python3 tools/gen_pubs.py
-Reads ../cv.tex (relative to the homepage directory) and rewrites the
-publication list between the PUBS-START / PUBS-END markers in publications.html.
-Fully commented-out \item blocks (e.g. [Under Review]) are skipped.
-"""
+r"""Regenerate publications.html from cv.tex."""
 
 import html
 import os
@@ -16,7 +10,6 @@ HOME = os.path.dirname(HERE)
 CV = os.path.normpath(os.path.join(HOME, "..", "cv.tex"))
 OUT = os.path.join(HOME, "publications.html")
 
-# (substring identifying the \section title in cv.tex, heading shown on the page, anchor)
 SECTIONS = [
     ("Conference Publications", "Conference Papers", "conference"),
     ("Journal", "Journal Papers", "journal"),
@@ -32,7 +25,6 @@ def strip_comments(text):
 
 
 def detex(s):
-    """Convert the small subset of LaTeX used in the CV to HTML."""
     s = re.sub(r"\\textbf\{([^{}]*)\}", r"<strong>\1</strong>", s)
     s = re.sub(r"\\underline\{([^{}]*)\}", r'<span class="pub-student">\1</span>', s)
     s = re.sub(r"\\textsl\{([^{}]*)\}", r"<em>\1</em>", s)
@@ -52,7 +44,6 @@ def parse_section(body):
         if not raw:
             continue
 
-        # Venue tag: leading \textbf{[ ... ]}
         m = re.match(r"\s*\\textbf\{\[(.*?)\]\}", raw, re.S)
         tag, rest = (m.group(1).strip(), raw[m.end():]) if m else ("", raw)
 
@@ -62,7 +53,6 @@ def parse_section(body):
             award = am.group(1).strip()
             tag = AWARD_RE.sub("", tag).strip()
 
-        # Title sits between `` and ''
         tm = re.search(r"``(.*?)''", rest, re.S)
         if tm:
             authors = rest[:tm.start()]
@@ -100,7 +90,6 @@ def render(entries):
 def main():
     tex = open(CV, encoding="utf-8").read()
 
-    # Slice cv.tex into \section blocks, then pick the ones we publish.
     marks = [(m.start(), m.group(1)) for m in re.finditer(r"\\section\{\\mysidestyle(.*?)\}", tex, re.S)]
     marks.append((len(tex), ""))
 
@@ -135,10 +124,8 @@ def main():
     )
     open(OUT, "w", encoding="utf-8").write(new)
 
-    # Headline stats
     everything = [e for _, _, es in blocks for e in es]
     total = len(everything)
-    # CSRankings-counted venues for HPC (SC, HPDC, ICS) and Databases (SIGMOD, VLDB, ICDE)
     TOP = ("SC", "HPDC", "ICS", "SIGMOD", "VLDB", "ICDE")
     top = sum(1 for e in everything if e["tag"].split("'")[0].strip() in TOP)
     honors = sum(1 for e in everything if e["award"])

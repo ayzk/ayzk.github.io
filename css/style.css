@@ -1,8 +1,3 @@
-/* ==========================================================================
-   Kai Zhao — homepage styles
-   Minimal, light academic layout: sticky profile sidebar + content column.
-   ========================================================================== */
-
 :root {
     --text: #494e52;
     --heading: #2c3238;
@@ -421,7 +416,6 @@ figcaption {
 @media (max-width: 720px) {
     body { font-size: 16px; }
 
-    /* Every destination stays one tap away: no menu to open first. */
     .nav-brand { display: none; }
 
     .nav-inner { gap: 0; padding: 0 16px; }
@@ -527,7 +521,7 @@ figcaption {
     color: var(--muted);
 }
 
-/* ---------- Records (grants + awards share one card) ---------- */
+/* ---------- Records ---------- */
 
 .records { list-style: none; margin: 0; padding: 0; }
 
