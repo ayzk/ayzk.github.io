@@ -3,53 +3,557 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Publications - Kai Zhao">
-    <title>Publications - Kai's Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Publications by Kai Zhao - high-performance computing, scientific data compression, and AI for science.">
+    <title>Publications &middot; Kai Zhao</title>
 
-    <link href="./css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<body>
-<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="index.html">Kai Zhao</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="students.html">Students</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="awards.html">Awards</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="publications.html">Publications <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="hiring.html">Hiring</a>
-            </li>
+<body class="page-narrow">
+<nav class="site-nav">
+    <div class="nav-inner">
+        <a class="nav-brand" href="index.html">Kai Zhao</a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="students.html">Students</a></li>
+            <li class="is-active"><a href="publications.html">Publications</a></li>
+            <li><a href="awards.html">Grants &amp; Awards</a></li>
+            <li><a href="hiring.html">Hiring</a></li>
         </ul>
     </div>
 </nav>
 
-<main role="main" class="container">
-    <div class="starter-template">
-        <h2>Publications</h2>
-        <ul>
-            <li>Please refer to my <a href="data/cv.pdf" target="_blank">CV</a> for up-to-date publications.</li>
-        </ul>
-    </div>
+<div class="layout layout--narrow">
+    <main class="content">
 
-</main>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
+        <h1 class="page-title">Publications</h1>
+
+        <!-- STATS-START -->
+        <ul class="stats">
+            <li><span class="stat-value">61</span><span class="stat-label">Peer-reviewed papers</span></li>
+            <li><span class="stat-value">35</span><span class="stat-label" title="SC, HPDC, ICS, SIGMOD, VLDB, ICDE">At CSRankings venues</span></li>
+            <li><span class="stat-value">4</span><span class="stat-label">Best-paper honors</span></li>
+        </ul>
+        <!-- STATS-END -->
+
+        <p class="pub-intro"><span class="pub-student">Underlined</span> authors are students I advise.</p>
+
+        <!-- PUBS-START -->
+        <section id="conference">
+            <h2 class="section-title">Conference Papers <span class="count">47</span></h2>
+            <ol class="pub-list">
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">SC'26</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">hZCCL2: Co-Designing Collective Communication with Vectorized Homomorphic Compression</p>
+                        <p class="pub-authors">Jiefeng Zhou, Sheng Di, Yanfei Guo, Yuhao Guo, Lingqi Zhang, <strong>Kai Zhao</strong>, Rajeev Thakur, Franck Cappello, Jiajun Huang</p>
+                        <p class="pub-meta"><em>Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</em>, Chicago, IL, USA, Nov 15-20, 2026.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">SC'26</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">LLM Agents Meet Lossy Compression: Benchmark, Demystify and Optimize across HPC Architectures</p>
+                        <p class="pub-authors">Changqing Li, Sheng Di, <strong>Kai Zhao</strong>, Wenqian Dong</p>
+                        <p class="pub-meta"><em>Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</em>, Chicago, IL, USA, Nov 15-20, 2026.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">VLDB'26</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Eureka: Enabling Fine-Grained Access and Range Queries on Compressed Scientific Data via Data-Index Co-Compression</p>
+                        <p class="pub-authors">Ning Yan, Sheng Di, <strong>Kai Zhao</strong>, Lipeng Wan</p>
+                        <p class="pub-meta"><em>Proceedings of the 52nd International Conference on Very Large Data Bases</em>, Boston, MA, USA, Aug 31 - Sep 4, 2026. Also in <em>Proceedings of the VLDB Endowment</em>, Volume 19, Issue 4, pp. 631-643.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">VLDB'26</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Error-bounded Point Cloud Compression Using Truncated Octahedron Quantization</p>
+                        <p class="pub-authors">Youyuan Liu, <span class="pub-student">Longtao Zhang</span>, <span class="pub-student">Ruoyu Li</span>, Bo Jiang, Taolue Yang, <strong>Kai Zhao</strong>, Sheng Di, Eduard Dragut, Sian Jin</p>
+                        <p class="pub-meta"><em>Proceedings of the 52nd International Conference on Very Large Data Bases</em>, Boston, MA, USA, Aug 31 - Sep 4, 2026.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">HPDC'26</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">TZ: Achieving High-Ratio Scientific Data Compression on GPUs with Global Data Decomposition</p>
+                        <p class="pub-authors"><span class="pub-student">Zhuoxun Yang</span>, <span class="pub-student">Ruoyu Li</span>, Amit Subrahmanya, Vishwas Rao, Sheng Di, Robert Underwood, <span class="pub-student">Longtao Zhang</span>, Jinyang Liu, Franck Cappello, <strong>Kai Zhao</strong></p>
+                        <p class="pub-meta"><em>Proceedings of the 35th ACM International Symposium on High-Performance Parallel and Distributed Computing</em>, Cleveland, OH, USA, July 13-16, 2026.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">HPDC'26</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">OPAL: On-demand Progressive Accelerated Scientific Lossy Compression</p>
+                        <p class="pub-authors"><span class="pub-student">Longtao Zhang</span>, <span class="pub-student">Ruoyu Li</span>, <span class="pub-student">Zhuoxun Yang</span>, Robert Underwood, Sheng Di, Daoce Wang, Jinyang Liu, Jiajun Huang, Franck Cappello, <strong>Kai Zhao</strong></p>
+                        <p class="pub-meta"><em>Proceedings of the 35th ACM International Symposium on High-Performance Parallel and Distributed Computing</em>, Cleveland, OH, USA, July 13-16, 2026.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">HPDC'26</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Bridging Information Theory and Practice for Scientific Lossy Compression</p>
+                        <p class="pub-authors">Sujata Sinha, Sheng Di, Vishwas Rao, Robert Underwood, David Lenz, Zizhe Jian, <span class="pub-student">Zhuoxun Yang</span>, <strong>Kai Zhao</strong>, Lingjia Liu, Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 35th ACM International Symposium on High-Performance Parallel and Distributed Computing</em>, Cleveland, OH, USA, July 13-16, 2026.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">ICS'26</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">GPZ: GPU-Accelerated Lossy Compressor for Particle Data</p>
+                        <p class="pub-authors"><span class="pub-student">Ruoyu Li</span>, Yafan Huang, <span class="pub-student">Longtao Zhang</span>, <span class="pub-student">Zhuoxun Yang</span>, Sheng Di, Boyuan Zhang, Jiajun Huang, Jinyang Liu, Jiannan Tian, Guanpeng Li, Fengguang Song, Hanqi Guo, Franck Cappello, <strong>Kai Zhao</strong></p>
+                        <p class="pub-meta"><em>40th ACM International Conference on Supercomputing</em>, Belfast, United Kingdom, 6-9 July, 2026.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">ICDE'26</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Enabling Homomorphic Analytical Operations on Compressed Scientific Data with Multi-stage Decompression</p>
+                        <p class="pub-authors">Xuan Wu, Sheng Di, Tripti Agarwal, <strong>Kai Zhao</strong>, Xin Liang, Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 42nd IEEE International Conference on Data Engineering</em>, Montreal, Canada, May 4 - 8, 2026.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">SC'25</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Boosting Scientific Error-Bounded Lossy Compression through Optimized Synergistic Lossy-Lossless Orchestration</p>
+                        <p class="pub-authors">Shixun Wu, Jinwen Pan, Jinyang Liu, Jiannan Tian, Ziwei Qiu, Jiajun Huang, <strong>Kai Zhao</strong>, Xin Liang, Sheng Di, Zizhong Chen, Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</em>, St. Louis, MO, USA, Nov 16-21, 2025.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">SC'25</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">STZ: A High Quality and High Speed Streaming Lossy Compression Framework for Scientific Data</p>
+                        <p class="pub-authors">Daoce Wang, Pascal Grosset, Jesus Pulido, Jiannan Tian, Tushar M. Athawale, Jinda Jia, Baixi Sun, Boyuan Zhang, Sian Jin, <strong>Kai Zhao</strong>, James Ahrens, Fengguang Song</p>
+                        <p class="pub-meta"><em>Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</em>, St. Louis, MO, USA, Nov 16-21, 2025.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">SC'25</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">What to Support When You’re Compressing: The State of Practice, Gaps, and Opportunities for Scientific Data Compression</p>
+                        <p class="pub-authors">Franck Cappello, Robert Underwood, Yuri Alexeev, Alison Baker, Ebru Bozdağ, Martin Burtscher, Kyle Chard, Sheng Di, Kyle Gerard Felker, Paul Chrsitopher O'Grady, Hanqi Guo, Yafan Huang, Peng Jiang, Sian Jin, Petter Johansson, Shaomeng Li, Xin Liang, Erik Lindahl, Peter Lindstrom, Zarija Lukić, Magnus Lundborg, Danylo Lykov, Masaru Nagaso, Kento Sato, Amarjit Singh, Seung Woo Son, Shihui Song, William Tang, Dingwen Tao, Jiannan Tian, Kazutomo Yoshii, <strong>Kai Zhao</strong></p>
+                        <p class="pub-meta"><em>Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</em>, St. Louis, MO, USA, Nov 16-21, 2025.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">HPDC'25</span><span class="pub-award">Best Paper Nominee</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">IPComp: Interpolation Based Progressive Lossy Compression for Scientific Applications</p>
+                        <p class="pub-authors"><span class="pub-student">Zhuoxun Yang</span>, Sheng Di, <span class="pub-student">Longtao Zhang</span>, <span class="pub-student">Ruoyu Li</span>, Ximiao Li, Jiajun Huang, Jinyang Liu, Franck Cappello, <strong>Kai Zhao</strong></p>
+                        <p class="pub-meta"><em>Proceedings of the 34th ACM International Symposium on High-Performance Parallel and Distributed Computing</em>, Notre Dame, IN, USA, July 20-23, 2025.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">VLDB'25</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">QPET: A Versatile and Portable Quantity-of-Interest-preservation Framework for Error-Bounded Lossy Compression</p>
+                        <p class="pub-authors">Jinyang Liu, Pu Jiao, <strong>Kai Zhao</strong>, Xin Liang, Sheng Di, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 51th International Conference on Very Large Data Bases</em>, London, UK, Sept 1 - 5, 2025.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">SIGMOD'25</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">LCP: Enhancing Scientific Data Management with Lossy Compression for Particles</p>
+                        <p class="pub-authors"><span class="pub-student">Longtao Zhang</span>, <span class="pub-student">Ruoyu Li</span>, Congrong Ren, Sheng Di, Jinyang Liu, Jiajun Huang, Robert Underwood, Pascal Grosset, Dingwen Tao, Xin Liang, Hanqi Guo, Franck Cappello, <strong>Kai Zhao</strong></p>
+                        <p class="pub-meta"><em>Proceedings of the ACM SIGMOD International Conference on Management of Data</em>, Berlin, Germany, June 22-27, 2025.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">SC'24</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">A High-Quality Workflow for Multi-Resolution Scientific Data Reduction and Visualization</p>
+                        <p class="pub-authors">Daoce Wang, Pascal Grosset, Jesus Pulido, Tushar M. Athawale, Jiannan Tian, <strong>Kai Zhao</strong>, Zarija Lukic, Axel Huebl, Zhe Wang, James Ahrens, Dingwen Tao</p>
+                        <p class="pub-meta"><em>Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</em>, Atlanta, GA, USA, Nov 17-22, 2024.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">SC'24</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">hZCC: Accelerating Collective Communication with Co-designed Operation-supported Compression</p>
+                        <p class="pub-authors">Jiajun Huang, Sheng Di, Xiaodong Yu, Zhaiyu Jia, Jinyang Liu, Zizhe Jian, Xin Liang, <strong>Kai Zhao</strong>, Xiaoyi Lu, Zizhong Chen, Franck Cappello, Yanfei Guo, Rajeev Thakur</p>
+                        <p class="pub-meta"><em>Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</em>, Atlanta, GA, USA, Nov 17-22, 2024.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">SC'24</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">High-ratio Scientific Lossy Compression on GPUs with Optimized Multi-level Interpolation</p>
+                        <p class="pub-authors">Jinyang Liu, Jiannan Tian, Shixun Wu, Sheng Di, Boyuan Zhang, Robert Underwood, Yafan Huang, Jiajun Huang, <strong>Kai Zhao</strong>, Guanpeng Li, Dingwen Tao, Zizhong Chen, Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</em>, Atlanta, GA, USA, Nov 17-22, 2024.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">ICS'24</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">gZCCL: Compression-Accelerated Collective Communication Framework for GPU Clusters</p>
+                        <p class="pub-authors">Jiajun Huang, Sheng Di, Xiaodong Yu, Zhaiyu Jia, Jinyang Liu, Yafan Huang, Ken Raffenetti, Hui Zhou, <strong>Kai Zhao</strong>, Xiaoyi Lu, Zizhong Chen, Franck Cappello, Yanfei Guo, Rajeev Thakur</p>
+                        <p class="pub-meta"><em>38th ACM International Conference on Supercomputing (ACM ICS2024)</em>, 2024.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">IPDPS'24</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">CliZ: Optimizing Lossy Compression for Climate Datasets with Adaptive Fine-tuned Data Prediction</p>
+                        <p class="pub-authors">Zizhe Jian, Sheng Di, Jinyang Liu, <strong>Kai Zhao</strong>, Xin Liang, Haiying Xu, Robert Underwood, Jiajun Huang, Shixun Wu, Zizhong Chen, Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 38th IEEE International Parallel and Distributed Processing Symposium</em>, 2024.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">IPDPS'24</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">An Optimized Error-controlled MPI Collective Framework Integrated with Lossy Compression</p>
+                        <p class="pub-authors">Jiajun Huang, Sheng Di, Xiaodong Yu, Yujia Zhai, Zhaorui Zhang, Jinyang Liu, Xiaoyi Lu, Ken Raffenetti, Hui Zhou, <strong>Kai Zhao</strong>, Zizhong Chen, Franck Cappello, Yanfei Guo, Rajeev Thakur</p>
+                        <p class="pub-meta"><em>Proceedings of the 38th IEEE International Parallel and Distributed Processing Symposium</em>, 2024.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">ICDE'24</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Preserving Topological Feature with Sign-of-Determinant Predicates in Lossy Compression: A Case Study of Vector Field Critical Points</p>
+                        <p class="pub-authors">Mingze Xia, Sheng Di, Franck Cappello, Pu Jiao, <strong>Kai Zhao</strong>, Jinyang Liu, Xuan Wu, Xin Liang, Hanqi Guo</p>
+                        <p class="pub-meta"><em>Proceedings of the 40th IEEE International Conference on Data Engineering</em>, Utrecht, Netherlands, May 13 - 16, 2024.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">SIGMOD'24</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">High-performance Effective Scientific Error-bounded Lossy Compression with Auto-tuned Multi-component Interpolation</p>
+                        <p class="pub-authors">Jinyang Liu, Sheng Di, <strong>Kai Zhao</strong>, Xin Liang, Sian Jin, Zizhe Jian, Jiajun Huang, Shixun Wu, Zizhong Chen, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 2024 International Conference on Management of Data</em>, Santiago, Chile, June 9 - 15, 2024.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">HiPC'23</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">SECRE: Surrogate-based Error-controlled Lossy Compression Ratio Estimation Framework</p>
+                        <p class="pub-authors">Arham Khan, Sheng Di, <strong>Kai Zhao</strong>, Jinyang Liu, Kyle Chaid, Ian Foster, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the IEEE 29th International Conference on High Performance Computing, Data, and Analytics</em>, Goa, India, Dec 18 - 21, 2023.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">BigData'23</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Exploring Wavelet Transform Usages for Error-bounded Scientific Data Compression</p>
+                        <p class="pub-authors">Jiajun Huang, Jinyang Liu, Sheng Di, Yujia Zhai, Zizhe Jian, Shixun Wu, <strong>Kai Zhao</strong>, Zizhong Chen, Yanfei Guo, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of 2023 IEEE International Conference on Big Data</em>, Sorrento, Italy, Dec 15 - 18, 2023.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">BigData'23</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">SRN-SZ: Deep Leaning-Based Scientific Error-bounded Lossy Compression with Super-resolution Neural Networks</p>
+                        <p class="pub-authors">Jinyang Liu, Sheng Di, Sian Jin, <strong>Kai Zhao</strong>, Xin Liang, Zizhong Chen, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of 2023 IEEE International Conference on Big Data </em>, Sorrento, Italy, Dec 15 - 17, 2023.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">SC'23</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">AMRIC: A Novel In Situ Lossy Compression Framework for Efficient I/O in Adaptive Mesh Refinement Applications</p>
+                        <p class="pub-authors">Daoce Wang, Jesus Pulido, Jesus Pulido, Jiannan Tian, Sian Jin, Houjun Tang, Jean Sexton, Sheng Di, <strong>Kai Zhao</strong>, Bo Fang, Zarija Lukic, Franck Cappello, James Ahrens, and Dingwen Tao</p>
+                        <p class="pub-meta"><em>Proceedings of the 35rd ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis</em>, Denvor, CO, USA, Nov 12 - 17, 2023.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">VLDB'23</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Toward Quantity-of-Interest Preserving Lossy Compression for Scientific Data</p>
+                        <p class="pub-authors">Pu Jiao, Sheng Di, Hanqi Guo, <strong>Kai Zhao</strong>, Jiannan Tian, Dingwen Tao, Xin Liang, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 49th International Conference on Very Large Data Bases</em>, Vancour, Canada, Aug 28 - Sep 1, 2023.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">ICS'23</span><span class="pub-award">Best Paper Nominee</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">FAZ: A flexible auto-tuned modular error-bounded compression framework for scientific data</p>
+                        <p class="pub-authors">Jinyang Liu, Sheng Di, <strong>Kai Zhao</strong>, Xin Liang, Zizhong Chen, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 37th ACM International Conference on Supercomputing</em>, Orlando, FL, June 21 - 23, 2023.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">CCGrid'23</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Towards Improving Reverse Time Migration Performance by High-speed High-fidelity Lossy Compression</p>
+                        <p class="pub-authors">Yafan Huang, <strong>Kai Zhao</strong>, Sheng Di, Guanpeng Li, Maxim Dmitriev, Thierry-Laurent D. Tonellot and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of he 23rd IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing</em>, Bangalore, India, May 1 - May 4, 2023.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">ICDE'23</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">A Feature-Driven Fixed-Ratio Lossy Compression Framework for Real-World Scientiﬁc Datasets</p>
+                        <p class="pub-authors">Md Hasanur Rahman, Sheng Di, <strong>Kai Zhao</strong>, Robert Underwood, Guanpeng Li, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 39th IEEE International Conference on Data Engineering</em>, Anaheim, CA, USA, April 3 - 7, 2023.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">PPoPP'23</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Improving Energy Saving of One-sided Matrix Decompositions on CPU-GPU Heterogeneous Systems</p>
+                        <p class="pub-authors">Jieyang Chen, Xin Liang, <strong>Kai Zhao</strong>, Hadi Zamani Sabzi, Laxmi Bhuyan, and Zizhong Chen</p>
+                        <p class="pub-meta"><em>Proceedings of the 28th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming</em>, Montreal, Canada. Feb 25 - Mar 1, 2023.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">HiPC'22</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Optimizing Multi-Range based Error-Bounded Lossy Compression for Scientific Datasets</p>
+                        <p class="pub-authors">Yuanjian Liu, Sheng Di, <strong>Kai Zhao</strong>, Sian Jin, Cheng Wang, Kyle Chard, Dingwen Tao, Ian Foster, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the IEEE 28th International Conference on High Performance Computing, Data, and Analytics</em>, Bengaluru, India, Dec 17-20, 2022.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">SC'22</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Dynamic Quality Metric Oriented Error Bounded Lossy Compression for Scientific Datasets</p>
+                        <p class="pub-authors">Jinyang Liu, Sheng Di, <strong>Kai Zhao</strong>, Xin Liang, Zizhong Chen, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 34rd ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis</em>, Dallas, TX, USA, Nov 13 - 18, 2022. Acceptance Rate: 25.3% (81/320)</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">HPDC'22</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Ultra-fast Error-bounded Lossy Compression for Scientific Dataset</p>
+                        <p class="pub-authors">Xiaodong Yu, Sheng Di, <strong>Kai Zhao</strong>, Jiannan Tian, Dingwen Tao, Xin Liang, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 31th International Symposium on High-Performance Parallel and Distributed Computing</em>, Minneapolis, USA, June 27 - July 1, 2022. Acceptance Rate: 19% (21/108)</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">ICDE'22</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">MDZ: An Efficient Error-bounded Lossy Compressor for Molecular Dynamics Simulations</p>
+                        <p class="pub-authors"><strong>Kai Zhao</strong>, Sheng Di, Danny Perez, Zizhong Chen, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 38th IEEE International Conference on Data Engineering</em>, Online, May 9 - 12, 2022.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">SC'21</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Resilient Error-bounded Lossy Compressor for Data Transfer</p>
+                        <p class="pub-authors">Sihuan Li, Sheng Di, <strong>Kai Zhao</strong>, Xin Liang, Zizhong Chen, Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 33rd ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis</em>, St. Louis, MO, Nov 14 - 19, 2021. Acceptance Rate: 23.6% (86/365)</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">Cluster'21</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Exploring Autoencoder-Based Error-Bounded Compression for Scientific Data</p>
+                        <p class="pub-authors">Jinyang Liu, Sheng Di, <strong>Kai Zhao</strong>, Sian Jin, Dingwen Tao, Xin Liang, Zizhong Chen, Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 23nd IEEE International Conference on Cluster Computing</em>, Online, Sep 7 - 10, 2021. Acceptance Rate: 29% (48/163)</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">Cluster'21</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">CuSZ+: Optimizing Error-Bounded Lossy Compression for Scientific Data on GPUs</p>
+                        <p class="pub-authors">Jiannan Tian, Sheng Di, Xiaodong Yu, Cody Rivera, <strong>Kai Zhao</strong>, Sian Jin, Yunhe Feng, Xin Liang, Dingwen Tao, Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 23nd IEEE International Conference on Cluster Computing</em>, Online, Sep 7 - 10, 2021. Acceptance Rate: 29% (48/163)</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">ICS'21</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">FT-BLAS: A High Performance BLAS Implementation With Online Fault Tolerance</p>
+                        <p class="pub-authors">Yujia Zhai, Elisabeth Giem, Quan Fan, <strong>Kai Zhao</strong>, Jinyang Liu, and Zizhong Chen</p>
+                        <p class="pub-meta"><em>Proceedings of the 35th ACM International Conference on Supercomputing</em>, Online, June 14 - 17, 2021. Acceptance Rate: 24% (38/157)</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">ICDE'21</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Optimizing Error-Bounded Lossy Compression for Scientiﬁc Data by Dynamic Spline Interpolation</p>
+                        <p class="pub-authors"><strong>Kai Zhao</strong>, Sheng Di, Maxim Dmitriev, Thierry-Laurent D. Tonellot, Zizhong Chen, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 37th IEEE International Conference on Data Engineering</em>, Chania, Crete, Greece, Apr 19 - 22, 2021. Acceptance Rate: 27% (151/549)</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">PACT'20</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">cuSZ: An Efficient GPU Based Error-Bounded Lossy Compression Framework for Scientific Data</p>
+                        <p class="pub-authors">Jiannan Tian, Sheng Di, <strong>Kai Zhao</strong>, Cody Rivera, Megan Hickman, Robert Underwood, Sian Jin, Xin Liang, Jon Calhoun, Dingwen Tao, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 29th International Conference on Parallel Architectures and Compilation Techniques</em>, Atlanta, GA, USA, Oct 3 - 7, 2020. Acceptance Rate: 25% (35/137)</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">Cluster'20</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Towards End-to-end SDC Detection for HPC Applications Equipped with Lossy Compression</p>
+                        <p class="pub-authors">Sihuan Li, Sheng Di, <strong>Kai Zhao</strong>, Xin Liang, Zizhong Chen, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 22nd IEEE International Conference on Cluster Computing</em>, Kobe, Japan, Sep 14 - 17, 2020. Acceptance Rate: 24% (32/132)</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">HPDC'20</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Significantly Improving Lossy Compression for HPC Datasets with Second-Order Prediction and Parameter Optimization</p>
+                        <p class="pub-authors"><strong>Kai Zhao</strong>, Sheng Di, Xin Liang, Sihuan Li, Dingwen Tao, Zizhong Chen, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 29th International Symposium on High-Performance Parallel and Distributed Computing</em>, Stockholm, Sweden, June 23 - 26, 2020. Acceptance Rate: 22% (16/71)</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">SC'19</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">FT-iSort: Efficient Fault Tolerance for Introsort</p>
+                        <p class="pub-authors">Sihuan Li, Hongbo Li, Xin Liang, Jieyang Chen, Elisabeth Giem, Kaiming Ouyang,<strong>Kai Zhao</strong>, Sheng Di, Franck Cappello, and Zizhong Chen</p>
+                        <p class="pub-meta"><em>Proceedings of the 31st ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis</em>, Denver, Colorado, USA, Nov 17 - 22, 2019. Acceptance Rate: 20% (72/344)</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">ICS'19</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">TSM2: Optimizing Tall-and-Skinny Matrix-Matrix Multiplication on GPUs</p>
+                        <p class="pub-authors">Jieyang Chen, Nan Xiong, Xin Liang, Dingwen Tao, Sihuan Li, Kaiming Ouyang, <strong>Kai Zhao</strong>, Nathan DeBardeleben, Qiang Guan, and Zizhong Chen</p>
+                        <p class="pub-meta"><em>Proceedings of the 33rd ACM International Conference on Supercomputing</em>, Phoenix, AZ, USA, June 26 - 28, 2019. Acceptance Rate: 23% (45/193)</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">SC'18</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Fault Tolerant One-sided Matrix Decompositions on Heterogeneous Systems with GPUs</p>
+                        <p class="pub-authors">Jieyang Chen, Hongbo Li, Sihuan Li, Xin Liang, Panruo Wu, Dingwen Tao, Kaiming Ouyang, Yuanlai Liu, <strong>Kai Zhao</strong>, Qiang Guan, and Zizhong Chen</p>
+                        <p class="pub-meta"><em>Proceedings of the 30th ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis</em>, Dallas, Texas, USA, Nov 11 - 16, 2018. Acceptance Rate: 19% (55/288)</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+        <section id="journal">
+            <h2 class="section-title">Journal Papers <span class="count">8</span></h2>
+            <ol class="pub-list">
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">TBD'26</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">SLyCE: An Efficient Surrogate-based Lossy Compression Quality Estimation Framework</p>
+                        <p class="pub-authors">Arham Khan, Sheng Di, <strong>Kai Zhao</strong>, Jinyang Liu, Kyle Chard, Ian Foster, and Franck Cappello</p>
+                        <p class="pub-meta"><em>IEEE Transactions on Big Data</em>, 2026.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">CSUR'25</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">A Survey on Error-Bounded Lossy Compression for Scientific Datasets</p>
+                        <p class="pub-authors">Sheng Di, Jinyang Liu, <strong>Kai Zhao</strong>, Xin Liang, Robert Underwood, Zhaorui Zhang, Milan Shah, Yafan Huang, Jiajun Huang, Xiaodong Yu, Congrong Ren, Hanqi Guo, Grant Wilkins, Dingwen Tao, Jiannan Tian, Sian Jin, Zizhe Jian, Daoce Wang, Md Hasanur Rahman, Boyuan Zhang, Shihui Song, Jon C. Calhoun, Guanpeng Li, Kazutomo Yoshii, Khalid Ayed Alharthi, and Franck Cappello</p>
+                        <p class="pub-meta"><em>ACM Computing Surveys</em>, 2025.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">TPDS'25</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">FedCSpc: A Cross-Silo Federated Learning System with Error-Bounded Lossy Parameter Compression</p>
+                        <p class="pub-authors">Zhaorui Zhang, Sheng Di, <strong>Kai Zhao</strong>, Sian Jin, Dingwen Tao, Zhuoran Ji, Benben Liu, Khalid Alharthi, Jiannong Cao, and Franck Cappello</p>
+                        <p class="pub-meta"><em>IEEE Transactions on Parallel and Distributed Systems</em>, 2025.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">TPDS'24</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">TAC+: Optimizing Error-Bounded Lossy Compression for 3D AMR Simulations</p>
+                        <p class="pub-authors">Daoce Wang, Jesus Pulido, Pascal Grosset, Sian Jin, Jiannan Tian, <strong>Kai Zhao</strong>, James Ahrens, and Dingwen Tao</p>
+                        <p class="pub-meta"><em>IEEE Transactions on Parallel and Distributed Systems</em>, Volume 35, Issue 3, pp. 421-438, March 2024.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">TPDS'23</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">FT-BLAS: A Fault Tolerant High Performance BLAS Implementation on x86 CPUs</p>
+                        <p class="pub-authors">Yujia Zhai, Elisabeth Giem, <strong>Kai Zhao</strong>, Jinyang Liu, Jiajun Huang, Bryan Wong, Christian Shelton, and Zizhong Chen</p>
+                        <p class="pub-meta"><em>IEEE Transactions on Parallel and Distributed Systems</em>, 2023.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">TBD'22</span><span class="pub-award">Best Paper Award</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">SZ3: A Modular Framework for Composing Prediction-Based Error-Bounded Lossy Compressors</p>
+                        <p class="pub-authors">Xin Liang*, <strong>Kai Zhao*</strong>, Sheng Di, Sihuan Li, Robert Underwood, li M. Gok, Jiannan Tian, Junjing Deng, Jon C. Calhoun, Dingwen Tao, Zizhong Chen, and Franck Cappello</p>
+                        <p class="pub-meta"><em>IEEE Transactions on Big Data</em>. August 2022. *Authors contributed equally.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">TPDS'22</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Optimizing Error-Bounded Lossy Compression for Scientific Data With Diverse Constraints</p>
+                        <p class="pub-authors">Yuanjian Liu, Sheng Di, <strong>Kai Zhao</strong>, Sian Jin, Cheng Wang, Kyle Chard, Dingwen Tao, Ian Foster, and Franck Cappello</p>
+                        <p class="pub-meta"><em>IEEE Transactions on Parallel and Distributed Systems</em>, July 2022.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">TPDS'21</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">FT-CNN: Algorithm-Based Fault Tolerance for Convolutional Neural Networks</p>
+                        <p class="pub-authors"><strong>Kai Zhao</strong>, Sheng Di, Sihuan Li, Xin Liang, Yujia Zhai, Jieyang Chen, Kaiming Ouyang, Franck Cappello and Zizhong Chen</p>
+                        <p class="pub-meta"><em>IEEE Transactions on Parallel and Distributed Systems</em>, Volume 32, Issue 7, July 2021.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+        <section id="workshop">
+            <h2 class="section-title">Workshop Papers <span class="count">6</span></h2>
+            <ol class="pub-list">
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">DRBSD-11</span><span class="pub-award">Best Paper Runner-up Award</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Benchmarking Cutting-Edge Scientific Error-Bounded Lossy Compressors on Correlation-Based Rate-Distortion</p>
+                        <p class="pub-authors">Ziwei Qiu, Jinyang Liu, <strong>Kai Zhao</strong>, Robert Underwood, and Sheng Di</p>
+                        <p class="pub-meta"><em>Proceedings of the 11th International Workshop on Data Analysis and Reduction for Big Scientific Data @SC'25</em>, St. Louis, MO, USA, Nov 17, 2025.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">DRBSD-10</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">SZOps: Scalar Operations for Error-bounded Lossy Compressor for Scientific Data</p>
+                        <p class="pub-authors">Tripti Agarwal, Sheng Di, Jiajun Huang, Yafan Huang, Ganesh Gopalakrishnan, Robert Underwood, <strong>Kai Zhao</strong>, Xin Liang, Guanpeng Li, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 10th International Workshop on Data Analysis and Reduction for Big Scientific Data @SC'24</em>, Atlanta, GA, USA, Nov 18, 2024.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">CLUSTER-W'23</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">An Efficient and Accurate Compression Ratio Estimation Model for SZx</p>
+                        <p class="pub-authors">Arham Khan, Sheng Di, <strong>Kai Zhao</strong>, Jinyang Liu, Kyle Chard, Ian Foster, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 2023 IEEE International Conference on Cluster Computing Workshops</em>, Santa Fe, NM, USA, Oct 31 - Nov 3, 2023.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">IWBDR-2</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Improving Lossy Compression for SZ by Exploring the Best-Fit Lossless Compression Techniques</p>
+                        <p class="pub-authors">Jinyang Liu, Sihuan Li, Sheng Di, Xin Liang, <strong>Kai Zhao</strong>, Dingwen Tao, Zizhong Chen, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 2st International Workshop on Big Data Reduction @BigData'21</em>, Orlando, FL, USA, Dec 15 - 18, 2021.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">IWBDR-1</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">SDRBench: Scientific Data Reduction Benchmark for Lossy Compressors</p>
+                        <p class="pub-authors"><strong>Kai Zhao</strong>, Sheng Di, Xin Liang, Sihuan Li, Dingwen Tao, Julie Bessac, Zizhong Chen, and Franck Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 1st International Workshop on Big Data Reduction @BigData'20</em>, Online, Dec 10 - 13, 2020.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-tags"><span class="pub-venue">DRBSD-7</span></div>
+                    <div class="pub-body">
+                        <p class="pub-title">Understanding Effectiveness of Multi-error-bounded Lossy Compression for Preserving Ranges of Interest in Scientific Analysis</p>
+                        <p class="pub-authors">Yuanjian Liu, Sheng Di, <strong>Kai Zhao</strong>, Kyle Chard, Wentao Ding, Sian Jin, Cheng Wang, Ian Foster, and Frank Cappello</p>
+                        <p class="pub-meta"><em>Proceedings of the 7th International Workshop on Data Analysis and Reduction for Big Scientific Data</em>, St. Louis, MO, USA, Nov 14th, 2021.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+        <!-- PUBS-END -->
+
+    </main>
+</div>
+
+<footer class="site-footer">&copy; Kai Zhao &middot; Department of Computer Science, Florida State University</footer>
+
+<script src="js/site.js"></script>
 </body>
 
 </html>

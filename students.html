@@ -3,95 +3,116 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Students - Kai Zhao's Lab">
-    <title>Students - Kai's Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Students in Kai Zhao's lab at Florida State University.">
+    <title>Students &middot; Kai Zhao</title>
 
-    <link href="./css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<body>
-<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="index.html">Kai Zhao</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="students.html">Students <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="awards.html">Awards</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="publications.html">Publications</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="hiring.html">Hiring</a>
-            </li>
+<body class="page-narrow">
+<nav class="site-nav">
+    <div class="nav-inner">
+        <a class="nav-brand" href="index.html">Kai Zhao</a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="is-active"><a href="students.html">Students</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="awards.html">Grants &amp; Awards</a></li>
+            <li><a href="hiring.html">Hiring</a></li>
         </ul>
     </div>
 </nav>
 
-<main role="main" class="container">
-    <div class="starter-template">
-        <h2>Students</h2>
-        <div class="student-profile">
-            <img src="data/Longtao.jpg" class="student-photo" alt="Longtao Zhang">
-            <p>
-                <a href="https://langdaozhang.github.io/">Longtao Zhang</a> (Ph.D., 2023–present) received his B.Eng. from Hunan University. He is an ICPC/CCPC silver medalist. His research interests include high-performance computing, data compression, and algorithms.
-            </p>
-        </div>
-        <div class="student-profile">
-            <img src="data/Ruoyu.jpg" class="student-photo" alt="Ruoyu Li">
-            <p>
-                <a href="https://ruoyush.github.io">Ruoyu Li</a> (Ph.D., 2023–present) earned his B.A. from China University of Mining and Technology and his M.S. from the University of Pittsburgh. He had five years of industry experience as a senior software engineer before joining FSU. His research covers high-performance computing, data compression, machine learning, and AI for healthcare.
-            </p>
-        </div>
-        <div class="student-profile">
-            <img src="data/Opi.jpg" class="student-photo student-photo-opi" alt="Md Mehrab Hossain Opi">
-            <p>
-                <a href="https://me-opi.github.io">Md Mehrab Hossain Opi</a> (Ph.D., 2026–present) earned both his B.Sc. and M.Sc. in Computer Science and Engineering from Khulna University of Engineering & Technology (KUET). He was a finalist in the 2024 ICPC World Finals and is a recipient of the Florida State University Graduate School Legacy Fellowship, which supports newly admitted doctoral students for up to five years. His research focuses on high-performance computing, tensor algebra, and efficient machine learning systems.
-            </p>
-        </div>
-        <div class="student-profile">
-            <img src="data/Chuan.jpg" class="student-photo student-photo-chuan" alt="Chuan Yu">
-            <p>
-                Chuan Yu (Ph.D., 2026–present) earned a bachelor's degree in Computer Science from Tongji University and a master's degree in Computer Engineering from National University of Singapore (NUS). At Tongji, he received the National Scholarship for the 2016–2017 academic year and was named Outstanding Student of the Academic Year in both 2015–2016 and 2016–2017; he also won a First-Class Prize (ranked 11th in province) at the 2012 Chinese Physics Olympiad.
-            </p>
-        </div>
-        <p>
-            Zhuoxun Yang (M.S., 2024–present) earned his B.S. from Peking University.
-        </p>
+<div class="layout layout--narrow">
+    <main class="content">
 
-        <h3>Former Students</h3>
-        <p>
-            Nicholas Simmons (M.S., 2024 Summer Intern).
-        </p>
-    </div>
+        <h1 class="page-title">Students</h1>
 
-    <div>
-        <hr>
-    </div>
+        <section>
+            <div class="people">
+                <div class="person">
+                    <img src="data/Longtao.jpg" class="person-photo person-photo--longtao" alt="Longtao Zhang">
+                    <div class="person-body">
+                        <h2 class="person-name"><a href="https://langdaozhang.github.io/" target="_blank" rel="noopener">Longtao Zhang</a></h2>
+                        <p class="person-meta">Ph.D. student &middot; 2023&ndash;present</p>
+                        <p>Longtao received his B.Eng. from Hunan University. He is an ICPC/CCPC silver medalist. His research interests include high-performance computing, data compression, and algorithms.</p>
+                        <ul class="creds">
+                            <li>ICPC/CCPC Silver Medalist</li>
+                        </ul>
+                    </div>
+                </div>
 
-    <div class="starter-template">
-        <figure class="text-center">
-            <a href="data/team2025.jpeg" target="_blank">
-                <img src="data/team2025.jpeg" class="img-fluid mx-auto d-block" alt="Lab team 2025" style="max-width:700px; width: 100%;">
-            </a>
-            <figcaption class="figure-caption text-center">Lab team (2025).</figcaption>
-        </figure>
-    </div>
+                <div class="person">
+                    <img src="data/Ruoyu.jpg" class="person-photo person-photo--ruoyu" alt="Ruoyu Li">
+                    <div class="person-body">
+                        <h2 class="person-name"><a href="https://ruoyush.github.io" target="_blank" rel="noopener">Ruoyu Li</a></h2>
+                        <p class="person-meta">Ph.D. student &middot; 2023&ndash;present</p>
+                        <p>Ruoyu earned his B.A. from China University of Mining and Technology and his M.S. from the University of Pittsburgh. He had five years of industry experience as a senior software engineer before joining FSU. His research covers high-performance computing, data compression, machine learning, and AI for healthcare.</p>
+                        <ul class="creds">
+                            <li>5 yrs industry (Senior SWE)</li>
+                        </ul>
+                    </div>
+                </div>
 
-</main>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
+                <div class="person">
+                    <img src="data/Opi-web.jpg" class="person-photo person-photo--opi" alt="Md Mehrab Hossain Opi">
+                    <div class="person-body">
+                        <h2 class="person-name"><a href="https://me-opi.github.io" target="_blank" rel="noopener">Md Mehrab Hossain Opi</a></h2>
+                        <p class="person-meta">Ph.D. student &middot; 2026&ndash;present</p>
+                        <p>Opi earned both his B.Sc. and M.Sc. in Computer Science and Engineering from Khulna University of Engineering &amp; Technology (KUET). He was a finalist in the 2024 ICPC World Finals and is a recipient of the Florida State University Graduate School Legacy Fellowship, which supports newly admitted doctoral students for up to five years. His research focuses on high-performance computing, tensor algebra, and efficient machine learning systems.</p>
+                        <ul class="creds">
+                            <li>ICPC World Finalist 2024</li>
+                            <li>FSU Legacy Fellowship</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="person">
+                    <img src="data/Chuan.jpg" class="person-photo person-photo--chuan" alt="Chuan Yu">
+                    <div class="person-body">
+                        <h2 class="person-name">Chuan Yu</h2>
+                        <p class="person-meta">Ph.D. student &middot; 2026&ndash;present</p>
+                        <p>Chuan earned a bachelor's degree in Computer Science from Tongji University and a master's degree in Computer Engineering from National University of Singapore (NUS). At Tongji, he received the National Scholarship for the 2016&ndash;2017 academic year and was named Outstanding Student of the Academic Year in both 2015&ndash;2016 and 2016&ndash;2017; he also won a First-Class Prize (ranked 11th in province) at the 2012 Chinese Physics Olympiad.</p>
+                        <ul class="creds">
+                            <li>National Scholarship</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="person">
+                    <img src="data/Zhuoxun.jpg" class="person-photo person-photo--zhuoxun" alt="Zhuoxun Yang">
+                    <div class="person-body">
+                        <h2 class="person-name">Zhuoxun Yang</h2>
+                        <p class="person-meta">M.S. student &middot; 2024&ndash;present</p>
+                        <p>Zhuoxun earned his B.S. from Peking University.</p>
+                        <ul class="creds">
+                            <li>Peking University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="sub-title">Former Students</h3>
+            <div class="people">
+                <div class="person person--compact">
+                    <div class="person-body">
+                        <h2 class="person-name">Nicholas Simmons</h2>
+                        <p class="person-meta">M.S. &middot; 2024 Summer Intern</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<footer class="site-footer">&copy; Kai Zhao &middot; Department of Computer Science, Florida State University</footer>
+
+<script src="js/site.js"></script>
 </body>
 
 </html>
