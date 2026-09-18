@@ -651,6 +651,9 @@ figcaption {
     color: var(--heading);
 }
 
+.pub-title a { color: inherit; }
+.pub-title a:hover { color: var(--accent); text-decoration: none; }
+
 .pub-authors { margin: 0 0 .15rem; font-size: .88rem; line-height: 1.5; }
 .pub-authors strong { color: var(--heading); }
 

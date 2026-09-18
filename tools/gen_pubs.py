@@ -2,10 +2,12 @@
 r"""Regenerate publications.html from cv.tex."""
 
 import html
+import json
 import os
 import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+DOIS = os.path.join(HERE, "dois.json")
 HOME = os.path.dirname(HERE)
 CV = os.path.normpath(os.path.join(HOME, "..", "cv.tex"))
 OUT = os.path.join(HOME, "publications.html")
@@ -17,6 +19,11 @@ SECTIONS = [
 ]
 
 AWARD_RE = re.compile(r"\((Best Paper[^)]*|Best Paper)\)", re.I)
+
+
+def key(s):
+    s = html.unescape(s).lower().replace("\u2019", "'").replace("\ufb01", "fi")
+    return re.sub(r"[^a-z0-9]+", " ", s).strip()
 
 
 def strip_comments(text):
@@ -71,7 +78,7 @@ def parse_section(body):
     return entries
 
 
-def render(entries):
+def render(entries, dois):
     out = []
     for e in entries:
         out.append('                <li class="pub">')
@@ -79,7 +86,10 @@ def render(entries):
         award = ('<span class="pub-award">%s</span>' % html.escape(e["award"], quote=False)) if e["award"] else ""
         out.append('                    <div class="pub-tags">%s%s</div>' % (badge, award))
         out.append('                    <div class="pub-body">')
-        out.append('                        <p class="pub-title">%s</p>' % e["title"])
+        doi = dois.get(key(e["title"]))
+        title = ('<a href="https://doi.org/%s" target="_blank" rel="noopener">%s</a>' % (doi, e["title"])
+                 if doi else e["title"])
+        out.append('                        <p class="pub-title">%s</p>' % title)
         out.append('                        <p class="pub-authors">%s</p>' % e["authors"])
         out.append('                        <p class="pub-meta">%s</p>' % e["venue"])
         out.append("                    </div>")
@@ -89,6 +99,7 @@ def render(entries):
 
 def main():
     tex = open(CV, encoding="utf-8").read()
+    dois = json.load(open(DOIS)) if os.path.exists(DOIS) else {}
 
     marks = [(m.start(), m.group(1)) for m in re.finditer(r"\\section\{\\mysidestyle(.*?)\}", tex, re.S)]
     marks.append((len(tex), ""))
@@ -110,7 +121,7 @@ def main():
         parts.append('            <h2 class="section-title">%s <span class="count">%d</span></h2>'
                      % (heading, len(entries)))
         parts.append('            <ol class="pub-list">')
-        parts.append(render(entries))
+        parts.append(render(entries, dois))
         parts.append("            </ol>")
         parts.append("        </section>")
     generated = "\n".join(parts)
