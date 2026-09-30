@@ -38,6 +38,7 @@ def detex(s):
     s = re.sub(r"\\emph\{([^{}]*)\}", r"<em>\1</em>", s)
     s = s.replace("\\%", "%").replace("\\&", "&amp;").replace("\\_", "_")
     s = s.replace("``", "\u201c").replace("''", "\u201d")
+    s = s.replace("---", "\u2014").replace("--", "\u2013").replace("~", "\u00a0")
     s = re.sub(r"\s+", " ", s)
     return s.strip()
 
